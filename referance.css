@@ -1,0 +1,32 @@
+.book-list{
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.045);
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 40px;
+}
+.abcd a{
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font: 100;
+    font-size: 20px;
+}
+.abcd a:hover{
+    color: white;
+    background-color: rgb(19, 2, 167);
+    transition: 0.9s;
+}
+.h-b{
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font: bold;
+    font-size: 70px;
+}
+body{
+    background:linear-gradient(245.59deg, #5b5faf 0%, #424688 28.53%, #0a0a7c 75.52%);
+}
