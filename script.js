@@ -1,12 +1,14 @@
-// Select the menu icon and navigation list
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
-// Define a function to toggle classes when the menu icon is clicked
-menu.onclick = () => {
-    // Toggle the 'bx-x' class on the menu icon
-    menu.classList.toggle('bx-x');
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
 
-    // Toggle the 'open' class on the navigation list
-    navlist.classList.toggle('open');
-};
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
